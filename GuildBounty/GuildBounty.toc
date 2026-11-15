@@ -1,0 +1,18 @@
+## Interface: 16001
+## Title: Guild Bounty
+## Notes: Tracks players who PvP-kill your guild and shares a Guild Bounty Board with guildmates.
+## Author: zxurian
+## Version: 1.0.0
+## SavedVariables: GuildBountyDB
+## SavedVariablesPerCharacter: GuildBountyCharDB
+## IconTexture: Interface\Icons\INV_Misc_Bone_HumanSkull_01
+## AddonCompartmentFunc: GuildBounty_OnAddonCompartmentClick
+
+Core.lua
+Data.lua
+Comm.lua
+Combat.lua
+Alert.lua
+Board.lua
+Minimap.lua
+Config.lua
