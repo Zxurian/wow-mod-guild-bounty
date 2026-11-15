@@ -2,7 +2,7 @@
 ## Title: Guild Bounty
 ## Notes: Tracks players who PvP-kill your guild and shares a Guild Bounty Board with guildmates.
 ## Author: zxurian
-## Version: 1.0.0
+## Version: 1.0.1
 ## SavedVariables: GuildBountyDB
 ## SavedVariablesPerCharacter: GuildBountyCharDB
 ## IconTexture: Interface\Icons\INV_Misc_Bone_HumanSkull_01

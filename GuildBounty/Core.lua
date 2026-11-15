@@ -3,7 +3,7 @@ local ADDON_NAME, GB = ...
 _G.GuildBounty = GB
 
 GB.PREFIX = "GuildBounty"          -- addon message prefix (max 16 chars)
-GB.VERSION = "1.0.0"
+GB.VERSION = "1.0.1"
 GB.TOP_N = 10
 
 local DEFAULTS = {
