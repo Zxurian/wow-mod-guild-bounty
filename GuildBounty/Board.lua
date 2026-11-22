@@ -43,7 +43,6 @@ local function rowTooltip(row)
     if not t then return end
     GameTooltip:SetOwner(row, "ANCHOR_RIGHT")
     GameTooltip:AddLine(GB.ClassColored(t.name, t.class))
-    GameTooltip:AddLine(t.name, 0.6, 0.6, 0.6)
     GameTooltip:AddDoubleLine("On board since", date("%Y-%m-%d", t.added), 1, 0.82, 0, 1, 1, 1)
     local mine = GB.PersonalKillCount(t.name)
     if mine > 0 then GameTooltip:AddDoubleLine("Killed you", mine, 1, 0.82, 0, 1, 1, 1) end

@@ -3,7 +3,7 @@ local ADDON_NAME, GB = ...
 _G.GuildBounty = GB
 
 GB.PREFIX = "GuildBounty"          -- addon message prefix (max 16 chars)
-GB.VERSION = "1.0.1"
+GB.VERSION = "1.0.2"
 GB.TOP_N = 10
 
 local DEFAULTS = {
@@ -57,11 +57,10 @@ function GB.FullName(name)
     return name .. "-" .. GB.RealmName()
 end
 
+-- Display-only: strips the realm suffix. Stored keys stay "Name-Realm".
 function GB.ShortName(name)
     if not name then return "?" end
-    local short, realm = name:match("^([^%-]+)%-(.+)$")
-    if short and realm == GB.RealmName() then return short end
-    return name
+    return name:match("^([^%-]+)%-") or name
 end
 
 function GB.PlayerName()
